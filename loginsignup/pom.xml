@@ -1,0 +1,53 @@
+package com.wellsfargo.stockmarket.companydetails.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+@Embeddable
+public class AssocStockExchange {
+
+	@Column(name="stockexchange")
+	private String stockexchange;
+	
+	@Column(name="stockcode")
+	private String stockcode;
+	
+	
+	@Column(name="assoccompanycode")
+	private double assoccompanycode;
+
+	public AssocStockExchange() {
+		
+	}
+	
+	public double getAssoccompanycode() {
+		return assoccompanycode;
+	}
+
+	public void setAssoccompanycode(double assoccompanycode) {
+		this.assoccompanycode = assoccompanycode;
+	}
+
+	public String getStockexchange() {
+		return stockexchange;
+	}
+
+	public void setStockexchange(String stockexchange) {
+		this.stockexchange = stockexchange;
+	}
+
+	public String getStockcode() {
+		return stockcode;
+	}
+
+	public void setStockcode(String stockcode) {
+		this.stockcode = stockcode;
+	}
+	
+	
+	
+	
+	
+}

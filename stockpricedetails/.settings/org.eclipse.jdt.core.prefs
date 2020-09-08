@@ -1,0 +1,19 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "preyashi123"]
+	url = https://github.com/Preyashi123/stockmarket/tree/companydetails_microservice
+	fetch = +refs/heads/*:refs/remotes/preyashi123/*
+[remote "companydetailsms"]
+	url = https://github.com/Preyashi123/stockmarket/tree/companydetails_microservice
+	fetch = +refs/heads/*:refs/remotes/companydetailsms/*
+[remote "companyms"]
+	url = https://github.com/Preyashi123/stockmarket.git
+	fetch = +refs/heads/*:refs/remotes/companyms/*
+[gui]
+	wmstate = normal
+	geometry = 893x435+156+156 175 196
